@@ -45,3 +45,22 @@ a{
     text-transform: uppercase;
     color: black;
 }
+
+.hero{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 20px;
+}
+
+.hero-text{
+    width: 40%;
+}
+
+.hero-img{
+    width: 250px;
+}
+
+.section-intro{
+    margin: 40px;
+}
