@@ -20,7 +20,7 @@
 }
 
 body{
-    background-color: var(--white);
+    background-color: white;
 }
 
 /* HEADER MOBILE */
@@ -37,7 +37,7 @@ body{
 }
 
 nav{
-    background-color: #ffa700; 
+     background-color: white/*#1686CC#ffa700*/;  
     display: flex;
     justify-content:space-between ;
     align-items: center;
@@ -70,6 +70,33 @@ nav{
     display: none;
 }
 
+@media (min-width: 1200px) {
+    
+    .contenedor-menu{
+        display: flex;
+        align-items: center;
+    }
+    .navbar-menu-mobile img{
+        overflow: hidden;
+    }
+    .contenedor-menu li{
+        padding: 10px;
+    }
+    #navbar-header:target .contenedor-menu{
+        height: auto;
+        
+    }
+    #navbar-header:target .open{
+        display: none;
+    }
+    #navbar-header:target .close{
+        display: none;
+    }
+    .close{
+        display: none;
+    }
+}
+
 /* HERO */
 .banner-container img{
   max-width: 100%;
@@ -79,32 +106,45 @@ nav{
 /* NEW IN SECTION */
 .section-newIn h2{
     text-align: center;
+    margin: 10px;
 }
 .section-cards{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr);
-
+    justify-items: center;
+    margin: 15px;
 }
 .newIn-card{
-    background-color: #7609B3;
+     background-color: white/*69D2FF#12ADB3#7609B3*/; 
     margin: 5px;
-    border-radius: 40px;
+    border-radius: 15px;
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 10px;
-    width: 90%;
+    width: 70%;
+    
+}
+.newIn-card a{
+    color: black;
+    padding: 4px;
 }
 .newIn-card img{
-    width: 50%;
+    width: 40%;
 }
 .newIn-button{
-    background-color: white;
+    background-color: #EB9300;
     border-radius: 5px;
     width: 80px;
     display: flex;
     justify-content: center;
+}
+
+@media (min-width: 1200px ) {
+    .section-cards{
+        display: flex;
+    }
 }
 
 /* DELIVERY SECTION */
@@ -125,7 +165,7 @@ nav{
 
 /* FOOTER */
 .footer-menu{
-    background-color: #ffa700;
+    background-color: #EB9300;
 }
 .footer-menu ul{
     display: flex;
