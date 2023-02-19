@@ -148,7 +148,7 @@ nav{
 }
 
 /* DELIVERY SECTION */
-.delivery {
+.delivery{
     /* background-color: #19FF88; */
 }
 .delivery-fragment{
@@ -186,3 +186,114 @@ nav{
     flex-direction: column;
     align-items: center;
 }
+
+/* MANGA PAGE */
+/*FILTER*/
+
+
+input[type="radio"][id="shounen"]:checked + label {
+    background-color: #ff4466;
+}
+input[type="radio"][id="shounen"]:checked ~ .seinen {
+    display: none;
+}
+
+input[type="radio"][id="seinen"]:checked + label {
+    background-color: blue;
+}
+input[type="radio"][id="seinen"]:checked ~ .shounen {
+    display: none;
+}
+
+/* input[type="radio"][id="all"]:checked + label {
+    background-color: green;
+    
+}  
+input[type="radio"][id="all"]:checked ~ .shounen {
+    display: none;
+*/
+
+.search-box{
+    display: flex;
+    justify-content: center;
+    
+}
+.search-box input{
+    height: 40px;
+    border-radius: 25px;
+    border: 2px solid #F7533E;
+}
+.search-box button{
+    border-radius: 50px;
+    border: 2px solid #F7533E;
+}
+
+.manga-container h3{
+    display: flex;
+    justify-content: center;
+    margin-top: 25px;
+    margin-bottom: 10px;
+}
+.filter-tab input, label{
+    padding-right: 25px;
+    margin-bottom: 25px;
+}
+.filter-tab input:first-child{
+    margin-left: 25%;
+}
+
+
+.card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 25px;
+}
+
+.card img{
+    width: 80%;
+    border-radius: 30px;
+    border: 2px solid #EB9300;
+}
+
+
+/*CONTACT PAGE*/
+
+.form-item{
+    display: flex;
+flex-direction: column;
+align-items: center;
+padding: 15px;
+}
+.form-item label{
+    margin-bottom: 5px;
+}
+
+.form-item input{
+    width: 50%;
+    border-radius: 10px;
+}
+.form-item #box{
+    height: 100px;
+}
+
+.contact-information{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+}
+
+.contact{
+    padding: 10px;
+}
+
+/* #sent-message{
+    display: none;
+}
+#sent-message:target{
+    display: block;
+} */
+
+
+/*SHOP PAGE*/
