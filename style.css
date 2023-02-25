@@ -20,7 +20,7 @@
 }
 
 body{
-    background-color: white;
+    background-color: #F0ECDD;
 }
 
 /* HEADER MOBILE */
@@ -35,6 +35,8 @@ body{
     height: 50px;
     margin: 10px;
 }
+
+
 
 nav{
      background-color: white/*#1686CC#ffa700*/;  
@@ -221,11 +223,11 @@ input[type="radio"][id="all"]:checked ~ .shounen {
 .search-box input{
     height: 40px;
     border-radius: 25px;
-    border: 2px solid #F7533E;
+    border: 2px solid black;
 }
 .search-box button{
     border-radius: 50px;
-    border: 2px solid #F7533E;
+    border: 2px solid black;
 }
 
 .manga-container h3{
@@ -259,6 +261,21 @@ input[type="radio"][id="all"]:checked ~ .shounen {
 
 /*CONTACT PAGE*/
 
+.form-container{
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    margin-left: 70px;
+    margin-right: 70px;
+    border-radius: 25px;
+}
+
+.contact.main, h1{
+    text-align: center;
+    margin: 20px;
+
+}
+
 .form-item{
     display: flex;
 flex-direction: column;
@@ -267,11 +284,17 @@ padding: 15px;
 }
 .form-item label{
     margin-bottom: 5px;
+    text-transform: uppercase;
 }
 
 .form-item input{
-    width: 50%;
-    border-radius: 10px;
+    width: 100%;
+    height: 30px;
+    border-radius: 20px;
+    border: 2px solid #EB9300;
+    background-color: #EB9300;
+    color: #000000;
+    text-transform: uppercase;
 }
 .form-item #box{
     height: 100px;
@@ -282,11 +305,18 @@ padding: 15px;
     flex-direction: column;
     align-items: center;
     padding: 10px;
+    margin-left: 20%;
+    margin-top: 20px;
+    align-items: flex-start;
 }
 
 .contact{
     padding: 10px;
+    display: flex;
+    align-items: center;
 }
+
+
 
 /* #sent-message{
     display: none;
