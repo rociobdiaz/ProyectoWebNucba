@@ -4,8 +4,11 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <!-- favicon -->
-        <title>Daruma</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Shippori+Antique&display=swap" rel="stylesheet">
+<link rel="icon" type="image/x-icon" href="./Assets/icons8-daruma-doll-16.png">
+        <title>DARUMA</title>
         <link rel="stylesheet" href="./style.css">
         <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"> -->
     </head>
@@ -15,8 +18,8 @@
     
         <nav class="navegacion" id="navbar-header">
             <div class="logo-container">
-                <img src="./Assets/daruma.png" alt="daruma logo" class="logo">
-                <p>Daruma</p>
+                <a href="index.html"><img src="./Assets/daruma.png" alt="daruma logo" class="logo"></a>
+                <p>DARUMA</p>
             </div>
             <div class="contenedor-header">
                 <a href="#navbar-header" class="navbar-menu-mobile open">
@@ -30,7 +33,7 @@
                     <li><a href="index.html">Inicio</a></li>
                     <li><a href="manga.html">Manga</a></li>
                     <li><a href="contacto.html">Contacto</a></li>
-                    <li><a href="shop.html">Shop</a></li>
+
                 </ul>
 
             </div>
@@ -53,33 +56,98 @@
     </header>
 
     <main>
+        <h1>Nuestros Mangas</h1>
         <section>
             <div class="search-box">
                 <input type="search" placeholder="Buscar...">
-                <button class="search-button" href="">BUSCAR</button>
+                <a class="search-button" href="#">BUSCAR</a>
             </div>
         </section>
 
         <section>
             <div class="manga-container">
-                <h3>Filtro</h3>
+                <!-- <h2>Filtro</h2>
+                <a class="filter-reset" href="./manga.html">Todo</a>
                 <div class="filter-tab">
                     
-                    <input type="radio" id="shounen" name="manga">
-                    <label for="shounen">Shounen</label>
-                    <input type="radio" id="seinen" name="manga">
-                    <label for="seinen">Seinen</label>
-                    <a class="filter-reset" href="./manga.html">Todo</a>
+                    <input class="input" type="radio" id="shounen" name="manga">
+                    <label class="input" for="shounen">Shounen</label>
+                    <input class="input" type="radio" id="seinen" name="manga">
+                    <label class="input" for="seinen">Seinen</label> -->
+
+                   
+                    
                     <!-- <input type="reset" id="reset" value="reset" name="reset">
                     <label for="reset">RESETAER</label> -->                     
-
-                    <div class="card shounen">
+                    <div class="card-main">
+                        <div class="card shounen" id="shounen">
                             <img src="Assets/spyfamily-manga.webp" alt="">
-                            <div class="newIn-text">
+                            <div class="manga-text">
                                 <p>SPY XFAMILY</p>
                                 <p>$ 1250</p>
                             </div>
-                            <div class="newIn-button">
+                            <div class="manga-button">
+                                <a href="#">Comprar</a> 
+                            </div>       
+                        </div>
+                    <div class="card shounen" id="shounen">
+                        <img src="Assets/demonslayer-manga.jpg" alt="manga demon slayer">
+                            <div class="newIn-text">
+                                <p>DEMON SLAYER</p>
+                                <p>$ 1250</p>
+                            </div>
+                            <div class="manga-button">
+                                <a href="#">Comprar</a> 
+                            </div>
+                    </div>
+                    <div class="card seinen">
+                        <img src="Assets/dressupmanga.jpg" alt="manga my dress up darling">
+                            <div class="manga-text">
+                                <p>MY DRESS UP DARLING</p>
+                                <p>$ 1250</p>
+                            </div>
+                            <div class="manga-button">
+                                <a href="#">Comprar</a> 
+                            </div>
+                    </div>
+                    <div class="card shounen">
+                        <img src="Assets/jujutsumanga.webp" alt="manga jujutsu kaisen">
+                            <div class="manga-text">
+                                <p>JUJUTSU KAISEN</p>
+                                <p>$ 1250</p>
+                            </div>
+                            <div class="manga-button">
+                                <a href="#">Ver Más</a> 
+                            </div>
+                    </div>
+                    <div class="card shounen">
+                        <img src="Assets/tokyomanga.jpg" alt="manga tokyo revengers">
+                            <div class="manga-text">
+                                <p>TOKYO REVENGERS</p>
+                                <p>$ 1250</p>
+                            </div>
+                            <div class="manga-button">
+                                <a href="#">Comprar</a> 
+                            </div>
+                    </div>
+                    <div class="card shounen">
+                        <img src="Assets/chainsawman-manga.webp" alt="manga chainsawman">
+                            <div class="manga-text">
+                                <p>CHAINSAWMAN</p>
+                                <p>$ 1250</p>
+                            </div>
+                            <div class="manga-button">
+                                <a href="#">Comprar</a> 
+                            </div>
+                    </div>
+                    </li>
+                    <!-- <div class="card shounen">
+                            <img src="Assets/spyfamily-manga.webp" alt="">
+                            <div class="manga-text">
+                                <p>SPY XFAMILY</p>
+                                <p>$ 1250</p>
+                            </div>
+                            <div class="manga-button">
                                 <a href="#">Ver Más</a> 
                             </div>       
                     </div>
@@ -89,50 +157,50 @@
                                 <p>DEMON SLAYER</p>
                                 <p>$ 1250</p>
                             </div>
-                            <div class="newIn-button">
+                            <div class="manga-button">
                                 <a href="#">Ver Más</a> 
                             </div>
                     </div>
                     <div class="card seinen">
                         <img src="Assets/dressupmanga.jpg" alt="manga my dress up darling">
-                            <div class="newIn-text">
+                            <div class="manga-text">
                                 <p>MY DRESS UP DARLING</p>
                                 <p>$ 1250</p>
                             </div>
-                            <div class="newIn-button">
+                            <div class="manga-button">
                                 <a href="#">Ver Más</a> 
                             </div>
                     </div>
                     <div class="card shounen">
                         <img src="Assets/jujutsumanga.webp" alt="manga jujutsu kaisen">
-                            <div class="newIn-text">
+                            <div class="manga-text">
                                 <p>JUJUTSU KAISEN</p>
                                 <p>$ 1250</p>
                             </div>
-                            <div class="newIn-button">
+                            <div class="manga-button">
                                 <a href="#">Ver Más</a> 
                             </div>
                     </div>
                     <div class="card shounen">
                         <img src="Assets/tokyomanga.jpg" alt="manga tokyo revengers">
-                            <div class="newIn-text">
+                            <div class="manga-text">
                                 <p>TOKYO REVENGERS</p>
                                 <p>$ 1250</p>
                             </div>
-                            <div class="newIn-button">
+                            <div class="manga-button">
                                 <a href="#">Ver Más</a> 
                             </div>
                     </div>
                     <div class="card shounen">
                         <img src="Assets/chainsawman-manga.webp" alt="manga chainsawman">
-                            <div class="newIn-text">
-                                <p>Título</p>
-                                <p>$precio</p>
+                            <div class="manga-text">
+                                <p>CHAINSAWMAN</p>
+                                <p>$ 1250</p>
                             </div>
-                            <div class="newIn-button">
+                            <div class="manga-button">
                                 <a href="#">Ver Más</a> 
                             </div>
-                    </div>
+                    </div> -->
                 </div>
             </div>
 
@@ -147,16 +215,16 @@
                 <li><a href="index.html">Inicio</a></li>
                 <li><a href="manga.html">Manga</a></li>
                 <li><a href="contacto.html">Contacto</a></li>
-                <li><a href="shop.html">Shop</a></li>
+      
             </ul>
         
             <div class="social-fragment">
-                <a href=""><img src="Assets/close.png" alt="">Instagram</a>
-                <a href=""><img src="Assets/close.png" alt="">TikTok</a>
-                <a href=""><img src="Assets/close.png" alt="">Twitter</a>
-                <a href=""><img src="Assets/close.png" alt="">Facebook</a>
+                <a href=""><img src="Assets/icons8-instagram-50.png" alt=""></a>
+                <a href=""><img src="Assets/icons8-tiktok-50.png" alt=""></a>
+                <a href=""><img src="Assets/icons8-twitter-squared-50.png" alt=""></a>
+                <a href=""><img src="Assets/icons8-facebook-50.png" alt=""></a>
             </div>
-    </div>
+        </div>
     </footer>
 </body>
 </html>
