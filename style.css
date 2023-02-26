@@ -10,7 +10,7 @@
 
 :root{
     --background-light-red: #fbe4d5;
-     --dark-red: #7A433E/*#C74231*/; 
+     --dark-red: #7A433E; 
     --red: #F7533E;
     --maroon: #78281E;
     --dark-burgundy: #784842;
@@ -30,7 +30,6 @@ body{
 /* HEADER MOBILE */
 .logo-container{
     display: flex;
-    /* flex-direction: column; */
     margin: 10px;
     align-items: center;
 }
@@ -46,12 +45,10 @@ a{
 
 
 nav{
-     background-color: #fff06a/*#1686CC#ffa700*/;  
+     background-color: #fff06a;
     display: flex;
     justify-content:space-between ;
     align-items: center;
-    /* border-bottom-left-radius: 30px;
-    border-bottom-right-radius: 30px; */
 }
 .close{
     display: none;
@@ -71,7 +68,7 @@ nav{
     padding: 3px;
 }
 #navbar-header:target .contenedor-menu{
-    height: 120px;
+    height: 180px;
 }
 #navbar-header:target .open{
     display: none;
@@ -92,20 +89,14 @@ nav{
         height: 100%;
         margin-right: 25px;
     }
-    .navbar-menu-mobile img{
-        /* overflow: hidden; */
-        /* display: none; */
-    }
+
     .open{
         display: none;
     }
     .contenedor-menu li{
         padding: 10px;
     }
-    /* #navbar-header:target .contenedor-menu{
-        height: auto;
-        
-    } */
+
     #navbar-header:target .open{
         display: none;
     }
@@ -135,7 +126,7 @@ nav{
     margin: 15px;
 }
 .newIn-card{
-     background-color: white/*69D2FF#12ADB3#7609B3*/; 
+     background-color: white;
     margin: 5px;
     border-radius: 15px;
     display: flex;
@@ -193,9 +184,6 @@ nav{
 }
 
 /* DELIVERY SECTION */
-/* .delivery{
-    background-color: #19FF88; 
-}*/
 .delivery-fragment{
     text-align: center;
     text-transform: uppercase;
@@ -265,30 +253,16 @@ nav{
 }
 
 /* MANGA PAGE */
-/*FILTER*/
 
-
-input[type="radio"][id="shounen"]:checked + label {
-    background-color: #ff4466;
+.banner-mangas{
+    display: flex;
+    justify-content: center;
 }
-input[type="radio"][id="shounen"]:checked ~ .seinen {
-    display: none;
+.banner-mangas img{
+    width: 95%;
+    border-radius: 30px;
+    margin-bottom: 20px;
 }
-
-input[type="radio"][id="seinen"]:checked + label {
-    background-color: blue;
-}
-input[type="radio"][id="seinen"]:checked ~ .shounen {
-    display: none;
-}
-
-/* input[type="radio"][id="all"]:checked + label {
-    background-color: green;
-    
-}  
-input[type="radio"][id="all"]:checked ~ .shounen {
-    display: none;
-*/
 
 .search-box{
     display: flex;
@@ -321,22 +295,6 @@ input[type="radio"][id="all"]:checked ~ .shounen {
     margin-top: 25px;
     margin-bottom: 10px;
 }
-.filter-tab input, label{
-    padding-right: 25px;
-    margin-bottom: 25px;
-    
-
-}
-.filter-tab input:first-child{
-    margin-left: 25%;
-}
-
-.filter-reset{
-    display: flex;
-    justify-content: center;
-    padding-bottom: 10px;
-
-}
 
 .card{
     display: grid;
@@ -344,8 +302,6 @@ input[type="radio"][id="all"]:checked ~ .shounen {
     grid-template-rows: 1fr;
     grid-column-gap: 5px;
     grid-row-gap: 5px;
-    /* display: flex;
-    flex-direction: column;*/
     align-items: center;
     justify-items: center;
     margin: 25px; 
@@ -381,41 +337,35 @@ input[type="radio"][id="all"]:checked ~ .shounen {
         width: 50%;
         border-radius: 30px;
     }
+    .banner-mangas img{
+        width: 70%;
+    }
 }
 
 @media (min-width: 1200px){
-   /*  .card{
-        display: grid;
-grid-template-columns: repeat(3, 1fr);
-grid-template-rows: repeat(2, 1fr);
-grid-column-gap: 0px;
-grid-row-gap: 0px;
-
-    }
-    .card{
-        display: flex;
-        flex-direction: column; */
-      
-
       .card-main{
         display: grid;
         grid-template-columns: repeat(3, 1fr);
       }
-        /* .card{
-        display: flex;
-        flex-direction: column;
-
-       } */
         .card img{
             width: 50%;
             border-radius: 30px;
         }
-
-    
-
-    }
+        .banner-mangas img{
+            width: 60%;
+        }
+}
 
 /*CONTACT PAGE*/
+
+.banner-contact{
+    display: flex;
+    justify-content: center;
+}
+.banner-contact img{
+    width: 95%;
+    border-radius: 30px;
+}
 
 .form-container{
     background-color: white;
@@ -472,6 +422,11 @@ padding: 15px;
     align-items: center;
 }
 
+@media (min-width: 800px) {
+    .banner-contact img{
+        width: 70%;
+    }
+}
 
 
 @media (min-width: 1200px) {
@@ -487,14 +442,119 @@ padding: 15px;
     .contact-information{
         align-items: flex-start;
     }
+    .banner-contact img{
+        width: 60%;
+    }
 }
 
-/* #sent-message{
-    display: none;
+/*LOGIN PAGE*/
+
+.form-login{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
 }
-#sent-message:target{
-    display: block;
-} */
+.form-login-item{
+    display: flex;
+    margin: 25px;
+    justify-items: center;
+}
+.form-login-item input{
+    border-radius: 30px;
+    border: 2px solid #ff9f5c;
+    background-color: #ff9f5c;
+}
+.form-login-item label{
+    margin: 0px;
+}
+.submit-login{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+.submit-login input{
+    height: 30px;
+    width: 30%;
+    background-color: #ff9f5c;
+    border-radius: 30px;
+    border: 2px solid #ff9f5c;
+}
+.banner-login{
+    display: flex;
+    justify-content: center;
+}
+.banner-login img{
+    width: 95%;
+    border-radius: 30px;
+}
+
+@media (min-width: 800px) {
+    .banner-login img{
+        width: 70%;
+    }
+}
+
+@media (min-width: 1200px) {
+    .form-login-item input{
+        margin-left: 10px;
+    }
+    .banner-login img{
+        width: 60%;
+    }
+}
 
 
-/*SHOP PAGE*/
+/*REGISTER PAGE*/
+.form-register{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.form-register-item{
+    display: flex;
+    margin: 25px;
+    justify-items: center;
+}
+.form-register-item input{
+    border-radius: 30px;
+    border: 2px solid #ff9f5c;
+    background-color: #ff9f5c;
+}
+.form-register-item label{
+    margin: 0px;
+}
+.submit-register{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+.submit-register input{
+    height: 30px;
+    width: 30%;
+    background-color: #ff9f5c;
+    border-radius: 30px;
+    border: 2px solid #ff9f5c;
+}
+.banner-register{
+    display: flex;
+    justify-content: center;
+}
+.banner-register img{
+    width: 95%;
+    border-radius: 30px;
+}
+
+@media (min-width: 800px) {
+    .banner-register img{
+        width: 70%;
+    }
+}
+
+@media (min-width: 1200px) {
+    .form-register-item input{
+        margin-left: 10px;
+    }
+    .banner-register img{
+        width: 60%;
+    }
+}
