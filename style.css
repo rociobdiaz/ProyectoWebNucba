@@ -9,13 +9,11 @@
 }
 
 :root{
-    --background-light-red: #fbe4d5;
-     --dark-red: #7A433E; 
-    --red: #F7533E;
-    --maroon: #78281E;
-    --dark-burgundy: #784842;
-    --white: #ffffff;
-    --black: #000000;
+    --orange: #ff9f5c;
+    --yellow: #fff06a;
+    --light-yellow: #fff894;
+    --background-color-white: #ffffff;
+    --letter-black: #000000;
 
 }
 
@@ -24,7 +22,7 @@ h1, h2, h3{
 }
 
 body{
-    background-color: #ffffff;
+    background-color: var(--background-color-white);
 }
 
 /* HEADER MOBILE */
@@ -40,12 +38,12 @@ body{
 }
 
 a{
-    color: #000000;
+    color: var(--letter-black);
 }
 
 
 nav{
-     background-color: #fff06a;
+     background-color: var(--yellow);
     display: flex;
     justify-content:space-between ;
     align-items: center;
@@ -126,7 +124,7 @@ nav{
     margin: 15px;
 }
 .newIn-card{
-     background-color: white;
+     background-color: var(--background-color-white);
     margin: 5px;
     border-radius: 15px;
     display: flex;
@@ -144,7 +142,7 @@ nav{
     padding: 10px;
 }
 .newIn-card a{
-    color: black;
+    color: var(--letter-black);
     padding: 4px;
 }
 .newIn-card img{
@@ -159,7 +157,7 @@ nav{
 }
 
 .newIn-button{
-    background-color: #ff9f5c;
+    background-color: var(--orange);
     border-radius: 15px;
     width: 100px;
     height: 40px;
@@ -228,7 +226,7 @@ nav{
 
 /* FOOTER */
 .footer-menu{
-    background-color: #fff06a;
+    background-color: var(--yellow);
     padding-bottom: 20px;
 }
 .footer-menu ul{
@@ -274,16 +272,16 @@ nav{
 .search-box input{
     height: 40px;
     border-radius: 25px;
-    border: 2px solid #fff894;
+    border: 2px solid var(--light-yellow);
     padding-left: 10px;
-    background-color: #fff894;
+    background-color: var(--light-yellow);
 }
 .search-box a{
     width: 100px;
     border-radius: 50px;
-    border: 2px solid #fff894;
+    border: 2px solid var(--light-yellow);
     margin-left: 10px;
-    background-color: #fff894;
+    background-color: var(--light-yellow);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -322,7 +320,7 @@ nav{
 
 .manga-button{
     margin-top: 5px;
-    background: #ffa769;
+    background: var(--orange);
     padding: 10px;
     width: 30%;
     border-radius: 30px;
@@ -368,7 +366,7 @@ nav{
 }
 
 .form-container{
-    background-color: white;
+    background-color: var(--background-color-white);
     display: flex;
     justify-content: center;
     margin-left: 70px;
@@ -399,9 +397,9 @@ padding: 15px;
     width: 100%;
     height: 30px;
     border-radius: 20px;
-    border: 2px solid #ffa769;
-    background-color: #ffa769;
-    color: #000000;
+    border: 2px solid var(--orange);
+    background-color: var(--orange);
+    color: var(--letter-black);
     text-transform: uppercase;
 }
 .form-item #box{
@@ -461,8 +459,8 @@ padding: 15px;
 }
 .form-login-item input{
     border-radius: 30px;
-    border: 2px solid #ff9f5c;
-    background-color: #ff9f5c;
+    border: 2px solid var(--orange);
+    background-color: var(--orange);
 }
 .form-login-item label{
     margin: 0px;
@@ -475,9 +473,9 @@ padding: 15px;
 .submit-login input{
     height: 30px;
     width: 30%;
-    background-color: #ff9f5c;
+    background-color: var(--orange);
     border-radius: 30px;
-    border: 2px solid #ff9f5c;
+    border: 2px solid var(--orange);
 }
 .banner-login{
     display: flex;
@@ -517,8 +515,8 @@ padding: 15px;
 }
 .form-register-item input{
     border-radius: 30px;
-    border: 2px solid #ff9f5c;
-    background-color: #ff9f5c;
+    border: 2px solid var(--orange);
+    background-color: var(--orange);
 }
 .form-register-item label{
     margin: 0px;
@@ -531,9 +529,9 @@ padding: 15px;
 .submit-register input{
     height: 30px;
     width: 30%;
-    background-color: #ff9f5c;
+    background-color: var(--orange);
     border-radius: 30px;
-    border: 2px solid #ff9f5c;
+    border: 2px solid var(--orange);
 }
 .banner-register{
     display: flex;
